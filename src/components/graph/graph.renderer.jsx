@@ -32,6 +32,8 @@ function _buildNodeLinks(nodeId, nodes, links, config, linkCallbacks, highlighte
 
     if (links[nodeId]) {
         const adjacents = Object.keys(links[nodeId]);
+        console.log("========= BOOGA BOOGA ==========")
+        console.log(adjacents)
         const n = adjacents.length;
 
         for (let j=0; j < n; j++) {

@@ -75,7 +75,7 @@ export default class Link extends React.Component {
         return (
             <svg>
                 <defs>
-                    <marker id="Triangle" viewBox="0 0 10 10" refX="14" refY="3"
+                    <marker id="Triangle" viewBox="0 0 10 10" refX="8" refY="3"
                         markerWidth="6" markerHeight="6" orient="auto" fill={this.props.stroke}>
                         <path d="M 0 0 L 6 3 L 0 6 z" />
                     </marker>

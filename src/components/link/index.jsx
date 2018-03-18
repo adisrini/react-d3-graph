@@ -57,7 +57,7 @@ export default class Link extends React.Component {
             strokeWidth: this.props.strokeWidth,
             stroke: this.props.stroke,
             opacity: this.props.opacity,
-            markerEnd: this.props.markerEnd
+            markerEnd: 'url(#Triangle)'
         };
 
         const lineProps = {

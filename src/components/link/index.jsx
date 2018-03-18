@@ -56,7 +56,8 @@ export default class Link extends React.Component {
         const lineStyle = {
             strokeWidth: this.props.strokeWidth,
             stroke: this.props.stroke,
-            opacity: this.props.opacity
+            opacity: this.props.opacity,
+            markerEnd: "url(#Triangle)"
         };
 
         const lineProps = {
@@ -72,7 +73,14 @@ export default class Link extends React.Component {
         };
 
         return (
-            <line {...lineProps} />
+            <svg>
+                <defs>
+                    <marker id="Triangle" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                  </defs>
+                <line {...lineProps} />
+            </svg>
         );
     }
 }
